@@ -1,0 +1,66 @@
+$color-primary-dark: #071013;
+$color-primary-light: #F3F3F3;
+
+$color-text-light: #F3F3F3;
+$color-text-dark: #071013;
+
+$color-additional-disable: #767676;
+$color-additional-link: #3A01DD;
+
+@mixin text-menu-lvl1($color){
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: $color;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+@mixin text-menu-lvl2($color){
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  text-decoration: none;
+  color: $color;
+  white-space: nowrap;
+}
+
+@mixin text-menu-lvl3($color){
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  color: $color;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+@mixin text-menu-think(){
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  color: $color-text-light;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+@mixin text-card-header() {
+  font-weight: 600;
+  font-style: normal;
+  font-size: 3.2rem;
+  color: $color-text-dark;
+}
+
+@mixin text-card-description() {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.6rem;
+  color: $color-text-dark;
+}
+
+@mixin text-card-link() {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.4rem;
+  color: $color-text-dark;
+  text-transform: uppercase;
+}

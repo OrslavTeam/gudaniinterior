@@ -1,0 +1,49 @@
+.page--header {
+    position: fixed;
+    top: 0;
+    z-index: 500;
+    display: flex;
+    justify-content: center;
+    background-color: $color-primary-dark;
+    width: 100%;
+}
+
+.page--header-wrapper {
+    display: grid;
+    grid-template:
+        'search lang-switcher logo navigation' auto
+        'navigation-menu navigation-menu navigation-menu navigation-menu' auto / auto auto 1fr auto;
+    width: 100%;
+    max-width: 850px;
+    padding: 0 1.6rem;
+}
+
+.page--logo-wrapper {
+    grid-area: logo;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    padding: .9rem 0;
+    height: 5.3rem;
+    width: 5.6rem;
+    transform: translate(-50%, -50%);
+}
+
+main {
+    margin-top: 5.5rem;
+}
+
+.container-fluid {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 128rem;
+    padding: 0 1.6rem;
+}

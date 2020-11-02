@@ -1,0 +1,149 @@
+.navigation--btn-wrapper {
+    display: none;
+}
+
+.navigation--menu {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    position: static;
+    box-shadow: none;
+    opacity: 1;
+    pointer-events: all;
+    transition: none;
+    padding: 0;
+    overflow-y: visible;
+}
+
+.navigation--list {
+    grid-auto-flow: column;
+    grid-column-gap: 2.4rem;
+}
+
+.navigation--item-lvl1 {
+    display: flex;
+    position: relative;
+    align-items: center;
+    background-color: transparent;
+}
+
+.navigation--container {
+    display: block;
+}
+
+.navigation--item-lvl1>.navigation--container {
+    display: grid;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    z-index: 1100;
+    transform: translateX(-50%);
+    background-color: #fff;
+    margin: 0;
+    padding: 2rem;
+
+    opacity: 0;
+    transition: opacity ease-in 300ms;
+    pointer-events: none;
+    overflow-y: auto;
+
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.navigation--item-active>.navigation--container {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.navigation--item-lvl2>.navigation--header {
+    color: $color-text-dark;
+    cursor: not-allowed;
+    padding-left: 1rem;
+
+    &::after {
+        display: none;
+    }
+}
+
+.navigation--item-lvl2>.navigation--container {
+    position: relative;
+    display: grid;
+    grid-row-gap: .8rem;
+    margin-top: 1rem;
+    padding-left: 1rem;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 1px;
+        background-color: $color-text-dark;
+    }
+}
+
+.navigation--item-lvl2>.navigation--link {
+    color: $color-text-dark;
+    @include text-menu-lvl3($color-text-dark);
+
+    &::after {
+        background-color: $color-text-dark;
+    }
+}
+
+.navigation--item-lvl2 span {
+    display: none;
+}
+
+.navigation--item-lvl3>.navigation--link{
+    color: $color-text-dark;
+
+    &::after {
+        background-color: $color-text-dark;
+    }
+}
+
+
+.navigation--item {
+    &-catalog {
+        &>ul {
+            display: grid;
+            grid-template: 'furniture doorsAndStairs'auto 'furniture textile'auto 'furniture accessories'auto;
+            grid-column-gap: 2rem;
+            grid-row-gap: 2rem !important;
+        }
+    }
+
+    &-services>ul {
+        position: relative;
+        grid-row-gap: .8rem;
+        padding-left: 3rem !important;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 2rem;
+            left: 2rem;
+            width: 1px;
+            height: calc(100% - 4rem);
+            background-color: $color-text-dark;
+        }
+    }
+
+    &-furniture {
+        grid-area: furniture;
+    }
+
+    &-doorsAndStairs {
+        grid-area: doorsAndStairs;
+    }
+
+    &-textile {
+        grid-area: textile;
+    }
+
+    &-accessories {
+        grid-area: accessories;
+    }
+}

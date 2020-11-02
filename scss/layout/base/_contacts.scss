@@ -1,0 +1,79 @@
+.contact-wrapper {
+  margin-top: 5rem;
+  margin-bottom: 3.6rem;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+  grid-row-gap: 1.8rem;
+  margin-top: 2.4rem;
+}
+
+.contact--header {
+  @include text-card-header();
+  text-align: center;
+  margin: 0;
+}
+
+.contact--block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.block--name {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+  color: $color-text-dark;
+  margin: 0 0 1.4rem 0;
+  text-align: center;
+}
+
+.block--item {
+  margin-bottom: 1rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &-name {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: $color-text-dark;
+    text-align: center;
+    margin: 0;
+  }
+
+  &-description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: $color-text-dark;
+    text-align: center;
+    margin: 0;
+    text-decoration: none;
+  }
+}
+
+.icon-social_facebook {
+  padding-right: 3rem;
+}
+
+.contact--map {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3.6rem;
+}
+
+.map--btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.map--btn:first-child {
+
+}

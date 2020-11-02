@@ -1,0 +1,27 @@
+@import 'layout/variable';
+
+@import 'layout/base/container';
+@import 'layout/base/page';
+
+@import 'layout/base/searchForm';
+@import 'layout/base/langSwitcher';
+@import 'layout/base/navigation';
+
+@import 'layout/base/homeSlider';
+@import 'layout/base/companyInfo';
+
+@import "layout/base/cards";
+@import "layout/base/contacts";
+
+@media (min-width: 700px) {
+    @import 'layout/more700/page';
+
+    @import 'layout/more700/navigation';
+    @import 'layout/more700/searchForm';
+
+    @import 'layout/more700/homeSlider';
+    @import 'layout/more700/companyInfo';
+}
+
+
+

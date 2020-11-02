@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.9" type="template" client="site">
+    <name>Gudaniinterior</name>
+    <version>1.0</version>
+    <creationDate>18.07.2020</creationDate>
+    <author>Viacheslav Orel</author>
+    <authorEmail>orslavteam@gmail.com</authorEmail>
+    <authorUrl>http://orslav-team.com</authorUrl>
+    <copyright>©2020. All rights resrved</copyright>
+    <license>TPL_GUDANIINTERIOR_XML_LICENSE</license>
+    <description>TPL_GUDANIINTERIOR_XML_DESCRIPTION</description>
+
+    <files>
+        <filename>favicon.ico</filename>
+        <filename>index.php</filename>
+        <filename>index.html</filename>
+        <filename>template_preview.png</filename>
+        <filename>template_thumbnail.png</filename>
+        <filename>templateDetails.xml</filename>
+
+        <folder>css</folder>
+        <folder>fonts</folder>
+        <folder>html</folder>
+        <folder>images</folder>
+        <folder>js</folder>
+        <folder>language</folder>
+    </files>
+
+    <positions>
+        <position>header</position>
+        <position>footer</position>
+        <position>position-0</position>
+        <position>position-1</position>
+        <position>position-2</position>
+        <position>position-3</position>
+        <position>position-4</position>
+        <position>position-5</position>
+        <position>position-6</position>
+        <position>position-7</position>
+        <position>position-8</position>
+        <position>position-9</position>
+        <position>position-10</position>
+        <position>position-11</position>
+        <position>position-12</position>
+        <position>position-13</position>
+        <position>position-14</position>
+    </positions>
+
+    <languages folder="language">
+        <language tag="en-GB">en-GB.tpl_gudaniinterior.ini</language>
+        <language tag="en-GB">en-GB.tpl_gudaniinterior.sys.ini</language>
+        <language tag="ru-RU">ru-RU.tpl_gudaniinterior.ini</language>
+        <language tag="ru-RU">ru-RU.tpl_gudaniinterior.sys.ini</language>
+        <language tag="uk-UA">uk-UA.tpl_gudaniinterior.ini</language>
+        <language tag="uk-UA">uk-UA.tpl_gudaniinterior.sys.ini</language>
+    </languages>
+
+    <config>
+        <fields name="params">
+            <fieldset name="advanced">
+                <field  name="company_logo"
+                        type="media"
+                        label="TPL_GUDANIINTERIOR_BASE_FIELD_COMPANY_LOGO_LABEL"
+                        description="TPL_GUDANIINTERIOR_BASE_FIELD_COMPANY_LOGO_DESCRIPTION" />
+                <field  name="company_name"
+                        type="text"
+                        label="TPL_GUDANIINTERIOR_BASE_FIELD_COMPANY_NAME_LABEL"
+                        description="TPL_GUDANIINTERIOR_BASE_FIELD_COMPANY_NAME_DESCRIPTION" />
+                <field  name="company_shortdescription"
+                        type="text"
+                        label="TPL_GUDANIINTERIOR_BASE_FIELD_COMPANY_SHORTDESCRIPTION_LABEL"
+                        description="TPL_GUDANIINTERIOR_BASE_FIELD_COMPANY_SHORTDESCRIPTION_DESCRIPTION" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>

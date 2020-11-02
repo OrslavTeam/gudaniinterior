@@ -1,0 +1,78 @@
+.home--slider{
+    max-height: 53rem;
+    position: relative;
+
+    .imgLoaded {
+      filter: brightness(80%);
+    }
+
+    .slideshowck {
+      max-height: 65rem !important;
+    }
+
+    .camera_commands{
+      display: none;
+    }
+  
+    .camera_next{
+      display: none;
+      width: 66px;
+      height: 66px;
+      background: transparent;
+      right: 126px;
+      outline: none;
+  
+      &:after{
+        content: '\e807';
+        font-family: "gudani_interior_web_font";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 6.6rem;
+        line-height: 6.6rem;
+        color: $color-primary-light;
+      }
+  
+      &:hover{
+        background-color: $color-primary-light;
+        &:after{
+          color: $color-text-dark;
+        }
+      }
+  
+      span{
+        display: none;
+      }
+    }
+  
+    .camera_prev{
+      display: none;
+      width: 66px;
+      height: 66px;
+      background: transparent;
+      right: 214px;
+      left: auto;
+      outline: none;
+  
+      &:after{
+        content: '\e806';
+        font-family: "gudani_interior_web_font";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 6.6rem;
+        line-height: 6.6rem;
+        color: $color-primary-light;
+      }
+  
+      &:hover{
+        background-color: $color-primary-light;
+        &:after{
+          color: $color-text-dark;
+        }
+      }
+  
+      span{
+        display: none;
+      }
+    }
+  }
+  

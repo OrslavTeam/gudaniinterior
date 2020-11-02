@@ -1,0 +1,127 @@
+.navigation--btn-wrapper {
+    grid-area: navigation;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navigation--btn {
+    background-color: transparent;
+    border: none;
+    color: $color-text-light;
+}
+
+.navigation--menu {
+    grid-area: navigation-menu;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    padding: 2.4rem;
+    background-color: $color-primary-dark;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity ease-in 300ms;
+    overflow-y: auto;
+
+    &-active {
+        opacity: 1;
+        pointer-events: all;
+    }
+}
+
+.navigation--list {
+    display: grid;
+    grid-row: auto;
+    grid-row-gap: 2.2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation--header {
+    display: inline;
+}
+
+.navigation--header-active+.navigation--container {
+    display: grid;
+}
+
+.navigation--container {
+    display: none;
+}
+
+.navigation--link,
+.navigation--header {
+    position: relative;
+    cursor: pointer;
+
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: $color-text-light;
+        opacity: 0;
+        transition: opacity ease-in 300ms;
+        pointer-events: none;
+    }
+
+    &:hover:after {
+        opacity: 1;
+    }
+
+    &-active::after {
+        opacity: 1;
+    }
+}
+
+.navigation--item-lvl1 {
+
+    &>.navigation--link,
+    &>.navigation--header {
+        @include text-menu-lvl1($color-text-light);
+        padding: 0;
+        margin: 0;
+    }
+
+    &>.navigation--container {
+        grid-auto-rows: auto;
+        grid-row-gap: 1.6rem;
+
+        list-style: none;
+        margin: 1.8rem 0 0 0;
+        padding: 0;
+    }
+}
+
+.navigation--item-lvl2 {
+
+    &>.navigation--link,
+    &>.navigation--header {
+        @include text-menu-lvl2($color-text-light);
+        padding: 0;
+        margin: 0;
+    }
+
+    &>.navigation--container {
+        grid-auto-rows: auto;
+        grid-row-gap: 1.2rem;
+
+        list-style: none;
+        margin: 1.4rem 0 0 0;
+        padding: 0;
+    }
+}
+
+.navigation--item-lvl3 {
+    &>.navigation--link {
+        @include text-menu-lvl3($color-text-light);
+        padding: 0;
+        margin: 0;
+    }
+}

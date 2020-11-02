@@ -1,0 +1,22 @@
+.company-info {
+    left: 15rem;
+    max-width: calc(100% - 15rem - 290px);
+    transform: none;
+    align-items: flex-start;
+}
+
+.company-info--name {
+    font-size: 3.4rem;
+    line-height: 4.6rem;
+}
+
+.company-info--slogan {
+    font-size: 2.8rem;
+    line-height: 3.8rem;
+    text-align: left;
+}
+
+.company-info--project-link {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+}

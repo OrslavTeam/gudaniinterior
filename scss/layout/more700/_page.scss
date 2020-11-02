@@ -1,0 +1,19 @@
+.page--header-wrapper {
+    grid-template:
+        'logo navigation-menu search lang-switcher' auto / auto 1fr auto auto;
+}
+
+.page--logo-wrapper {
+    position: static;
+    transform: none;
+    height: 9.2rem;
+    width: auto;
+}
+
+main {
+    margin-top: 9.2rem;
+}
+
+.container {
+    padding: 0;
+}
